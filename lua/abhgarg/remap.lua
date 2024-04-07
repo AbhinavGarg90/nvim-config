@@ -1,2 +1,13 @@
-vim.g.mapleader = " "
 vim.keymap.set("n", "<C-e>", vim.cmd.Ex)
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("n", "<S-k>", "41k", {noremap=true})
+vim.keymap.set("n", "<S-j>", "41j", {noremap=true})
+vim.keymap.set("x", "<S-k>", "41k", {noremap=true})
+vim.keymap.set("x", "<S-j>", "41j", {noremap=true})
+vim.keymap.set("x", "<Tab>", ">><CR>", {noremap=true})
+vim.keymap.set("x", "<S-Tab>", "<<<CR>", {noremap=true})
+vim.keymap.set("n", "<Tab>", ">>", {noremap=true})
+vim.keymap.set("n", "<S-Tab>", "<<", {noremap=true})
+vim.keymap.set("n", "<S-u>", "<C-r>", {noremap=true})
+
