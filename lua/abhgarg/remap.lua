@@ -10,4 +10,6 @@ vim.keymap.set("x", "<S-Tab>", "<<<CR>", {noremap=true})
 vim.keymap.set("n", "<Tab>", ">>", {noremap=true})
 vim.keymap.set("n", "<S-Tab>", "<<", {noremap=true})
 vim.keymap.set("n", "<S-u>", "<C-r>", {noremap=true})
-
+vim.keymap.set("n", "<C-t>", ":terminal<CR>", {noremap=true})
+vim.keymap.set("n", "<C-n>", ":bprev<CR>", {noremap=true})
+vim.keymap.set("n", "<C-m>", ":bnext<CR>", {noremap=true})

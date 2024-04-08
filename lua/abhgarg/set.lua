@@ -8,6 +8,9 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
+vim.opt.wrap = false
+vim.opt.wrap = false
+
 
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
@@ -29,3 +32,5 @@ vim.keymap.set("n", "<leader>d", "\"_d")
 
 -- Relative line numbers in file tree
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
+
+-- Visualize unsaved buffers clearer

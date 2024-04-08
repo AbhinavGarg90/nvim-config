@@ -41,5 +41,8 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
+    use('m4xshen/autoclose.nvim')
+    use('vim-airline/vim-airline')
+    use {'numToStr/Comment.nvim'}
 end)
 
