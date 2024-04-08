@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
 	}
     use('m4xshen/autoclose.nvim')
     use('vim-airline/vim-airline')
-    use {'numToStr/Comment.nvim'}
+    use('numToStr/Comment.nvim')
+    use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
 end)
 
