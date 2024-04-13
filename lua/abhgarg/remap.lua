@@ -1,3 +1,5 @@
+vim.keymap.set("n", "<C-e>", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>e", ":vsplit | wincmd H | Ex | vertical resize 25<CR>")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 vim.keymap.set("i", "jk", "<Esc>")
 vim.keymap.set("n", "<S-k>", "41k", {noremap=true})
