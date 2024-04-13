@@ -45,5 +45,6 @@ return require('packer').startup(function(use)
     use('vim-airline/vim-airline')
     use('numToStr/Comment.nvim')
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
+    use('nvim-tree/nvim-tree.lua')
 end)
 
