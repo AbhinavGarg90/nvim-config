@@ -30,3 +30,4 @@ vim.keymap.set("n", "<leader>d", "\"_d")
 
 -- Relative line numbers in file tree
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
+

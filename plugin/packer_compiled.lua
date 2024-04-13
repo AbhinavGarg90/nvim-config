@@ -180,6 +180,11 @@ _G.packer_plugins = {
     path = "/home/abhinavgarg/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["term-edit.nvim"] = {
+    loaded = true,
+    path = "/home/abhinavgarg/.local/share/nvim/site/pack/packer/start/term-edit.nvim",
+    url = "https://github.com/chomosuke/term-edit.nvim"
+  },
   ["toggle-lsp-diagnostics.nvim"] = {
     loaded = true,
     path = "/home/abhinavgarg/.local/share/nvim/site/pack/packer/start/toggle-lsp-diagnostics.nvim",

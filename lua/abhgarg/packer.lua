@@ -46,5 +46,6 @@ return require('packer').startup(function(use)
     use('numToStr/Comment.nvim')
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
     use('nvim-treesitter/nvim-treesitter-context')
+    use('chomosuke/term-edit.nvim')
 end)
 
