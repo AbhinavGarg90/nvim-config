@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>e", ":vsplit | wincmd H | vertical resize 25<CR>")
+vim.keymap.set("n", "<leader>e", ":vsplit | wincmd H | vertical resize 35<CR>")
 
 local function is_terminal_buffer(bufnr)
     local buftype = vim.api.nvim_buf_get_option(bufnr, 'buftype')
