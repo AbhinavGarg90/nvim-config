@@ -20,14 +20,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.scrolloff = 41
 
-vim.keymap.set("x", "<leader>p", "\"_dP")
-
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
-
-vim.keymap.set("n", "<leader>d", "\"_d")
 
 -- Relative line numbers in file tree
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
-
+vim.opt.listchars = { tab = ">>", trail = ".", nbsp = "␣" }
