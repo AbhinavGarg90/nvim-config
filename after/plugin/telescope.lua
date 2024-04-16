@@ -25,4 +25,8 @@ vim.keymap.set('v', '<leader>ff', "y:Telescope live_grep<CR><C-r>\"", {noremap =
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fe', builtin.loclist, {})
 vim.keymap.set('n', '<leader>fw', builtin.grep_string, {})
+vim.keymap.set('n', '<leader>m', builtin.marks)
+vim.keymap.set('n', '<leader>fs', function()
+	builtin.grep_string({ search = vim.fn.input("Grep > ") });
+end)
 
