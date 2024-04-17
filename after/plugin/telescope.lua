@@ -21,7 +21,7 @@ telescope.setup({
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('v', '<leader>ff', "y:Telescope find_files<CR><C-r>\"", {noremap = true})
-vim.keymap.set('v', '<leader>ff', "y:Telescope live_grep<CR><C-r>\"", {noremap = true})
+vim.keymap.set('v', '<leader>fg', "y:Telescope live_grep<CR><C-r>\"", {noremap = true})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fe', builtin.loclist, {})
 vim.keymap.set('n', '<leader>fw', builtin.grep_string, {})

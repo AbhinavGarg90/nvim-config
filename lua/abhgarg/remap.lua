@@ -13,6 +13,8 @@ vim.keymap.set("n", "<S-u>", "<C-r>", {noremap=true})
 vim.keymap.set("n", "<C-t>", ":terminal<CR>", {noremap=true})
 vim.keymap.set("n", "<C-n>", ":bprev<CR>", {noremap=true})
 vim.keymap.set("n", "<C-m>", ":bnext<CR>", {noremap=true})
+vim.keymap.set("v", "/", "y/<C-r>\"", {noremap=true})
+vim.keymap.set("v", "?", "y?<C-r>\"", {noremap=true})
 
 vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set("n", "<leader>y", "\"+y")
