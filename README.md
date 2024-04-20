@@ -1,1 +1,3 @@
-`git clone https://github.com/AbhinavGarg90/nvim-config.git ~/.config/nvim`
+```bash
+git clone https://github.com/AbhinavGarg90/nvim-config.git ~/.config/nvim
+```
