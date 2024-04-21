@@ -47,5 +47,14 @@ return require('packer').startup(function(use)
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
     use('nvim-treesitter/nvim-treesitter-context')
     use('chomosuke/term-edit.nvim')
+    use {
+        'rmagatti/auto-session',
+        config = function()
+            require("auto-session").setup {
+                log_level = "error",
+                auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+            }
+        end
+    }
 end)
 
