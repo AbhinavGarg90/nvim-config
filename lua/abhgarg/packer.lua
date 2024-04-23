@@ -1,5 +1,4 @@
 vim.cmd [[packadd packer.nvim]]
-
 return require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
@@ -16,7 +15,6 @@ return require('packer').startup(function(use)
 		end
 	})
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
 
@@ -47,6 +45,7 @@ return require('packer').startup(function(use)
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
     use('nvim-treesitter/nvim-treesitter-context')
     use('chomosuke/term-edit.nvim')
+    use('airblade/vim-gitgutter')
     use {
         'rmagatti/auto-session',
         config = function()
