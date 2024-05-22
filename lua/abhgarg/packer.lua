@@ -45,7 +45,8 @@ return require('packer').startup(function(use)
     use('WhoIsSethDaniel/toggle-lsp-diagnostics.nvim')
     use('nvim-treesitter/nvim-treesitter-context')
     use('chomosuke/term-edit.nvim')
-    use('airblade/vim-gitgutter')
+    -- use('airblade/vim-gitgutter')
+    use('lewis6991/gitsigns.nvim')
     use {
         'rmagatti/auto-session',
         config = function()

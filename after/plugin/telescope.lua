@@ -1,5 +1,8 @@
 local builtin = require('telescope.builtin')
+local enable_telescope_hidden = false
 local _, telescope = pcall(require, "telescope")
+
+
 telescope.setup({
     defaults = {
         path_display = {"truncate"}
@@ -15,9 +18,24 @@ telescope.setup({
                   ["d"] = "delete_buffer",
                 }
             }
+        },
+        find_files = {
+            hidden = false
         }
     }
 })
+
+vim.api.nvim_create_user_command('TelescopeHiddenToggle', function()
+    enable_telescope_hidden = not enable_telescope_hidden
+    telescope.setup({
+        pickers = {
+            find_files = {
+                hidden = enable_telescope_hidden
+            }
+        }
+    })
+end
+, {})
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('v', '<leader>ff', "y:Telescope find_files<CR><C-r>\"", {noremap = true})
