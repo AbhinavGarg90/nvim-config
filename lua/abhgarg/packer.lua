@@ -55,5 +55,6 @@ return require('packer').startup(function(use)
             }
         end
     }
+    use('ggandor/leap.nvim')
 end)
 
